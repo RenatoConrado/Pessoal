@@ -12,7 +12,7 @@ dynamic.shift(1, 2, 3, 4);
 dynamic.unshift(); // [2, 3, 4]
 
 // Concatena
-const concated = static.concat(dynamic) // [a, b, 2, 3, 4]
+const concated = static.concat(dynamic) // [a, b, 2, 3, 4] 
 
 // Retorna copia de valores
 const sliced = static.slice(0, 1) // [a, b]
