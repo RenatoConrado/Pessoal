@@ -23,7 +23,7 @@
 ## *Baixar a imagem*
 
 ```bash
-docker pull "mysql:latest
+docker pull "mysql:latest"
 ```
 
 ### Verificar as imagens
