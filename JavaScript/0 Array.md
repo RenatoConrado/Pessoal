@@ -189,7 +189,6 @@ dynamic.reverse();
 [3, 2, 1]
 ```
 
-
 ## MULTIDIMENSIONAL
 
 ```js
@@ -206,4 +205,3 @@ Linha 2 e Coluna 3
 ```js
 [6]
 ```
-
