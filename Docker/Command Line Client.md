@@ -1,13 +1,13 @@
 # [Command Line Client (CLI)](https://docs.docker.com/reference/cli/docker/)
 
 - [Command Line Client (CLI)](#command-line-client-cli)
-  - [IMAGENS](#imagens)
+  - [Imagens](#imagens)
     - [Baixar a imagem](#baixar-a-imagem)
       - [Listar imagens](#listar-imagens)
       - [Detalhes de uma imagem](#detalhes-de-uma-imagem)
       - [Remover imagem](#remover-imagem)
       - [Remover imagens não utilizadas](#remover-imagens-não-utilizadas)
-  - [CONTAINERS](#containers)
+  - [Containers](#containers)
   - [Inicializar a imagem](#inicializar-a-imagem)
     - [Expor Porta](#expor-porta)
     - [Montar volume](#montar-volume)
@@ -25,7 +25,7 @@
     - [Parar e Remover o Container](#parar-e-remover-o-container)
   - [Iniciar um Container Parado](#iniciar-um-container-parado)
 
-## [IMAGENS](https://docs.docker.com/reference/cli/docker/image/)
+## [Imagens](https://docs.docker.com/reference/cli/docker/image/)
 
 ### [Baixar a imagem](https://docs.docker.com/reference/cli/docker/image/pull/)
 
@@ -59,7 +59,7 @@ docker rmi mysql:latest
 docker image prune
 ```
 
-## [CONTAINERS](https://docs.docker.com/reference/cli/docker/container/)
+## [Containers](https://docs.docker.com/reference/cli/docker/container/)
 
 ## [Inicializar a imagem](https://docs.docker.com/reference/cli/docker/container/run/)
 
