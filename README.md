@@ -2,17 +2,6 @@
 
 Traduzo os tópicos princiapis de documentações em formato Markdown e guardo os arquivos.
 
-- [Documentação Pessoal](#documentação-pessoal)
-  - [Docker](#docker)
-    - [Comand Line Client](#comand-line-client)
-    - [Docker Compose](#docker-compose)
-  - [Javascript](#javascript)
-    - [Array](#array)
-    - [Objeto](#objeto)
-    - [Função](#função)
-    - [Arrow](#arrow)
-    - [Destructuring Assignment](#destructuring-assignment)
-
 ## [Docker](./Docker/)
 
 ### [Comand Line Client](./Docker/Command%20Line%20Client.md)
