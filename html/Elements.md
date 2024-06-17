@@ -3,22 +3,24 @@
 - [HyperText Markup Language](#hypertext-markup-language)
   - [Form input](#form-input)
     - [Tipos](#tipos)
-    - [atributos](#atributos)
+    - [Atributos](#atributos)
+      - [Non - Stardard](#non---stardard)
+    - [Metodos](#metodos)
 
 ## [Form input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
-```html
-<input type="text" disabled/>
-```
+<input type="text" id="name" name="name" required minlength="1" maxlength="9" size="11" placeholder="formulario"/>
 
-<input type="text" disabled/>
+```html
+<input type="text" id="name" name="name" required minlength="1" maxlength="9" size="11" placeholder="formulario"/>
+```
 
 ### [Tipos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type)
 
-- [button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) <input type="button" value="valor"/>
+- [button](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button) <input type="button" value="butão"/>
 
     ```html
-    <input type="button" value="valor"/>
+    <input type="button" value="butão"/>
     ```
 
 - [checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox) <input type="checkbox" checked/>
@@ -63,6 +65,8 @@
 
     [Receber Arquivos](https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications#getting_information_about_selected_files)
 
+    [accept](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#accept)
+
     ```html
     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
     ```
@@ -76,6 +80,9 @@
 - [image](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
 
     <input type="image" src="../assets/ein.png" alt="Cachorrinho fofo" style="width: 30%; max-height: 100px">
+
+  - [alt](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#alt)
+  - [formaction](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction)
 
     ```html
     <input type="image" src="../assets/ein.png" alt="cachorrinho fofo">
@@ -202,4 +209,60 @@
     <input type="week" min="2024-W18" max="2024-W26" required />
     ```
 
-### [atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes)
+### [Atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attributes)
+
+- [accept](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#accept) - Tipo: file
+- [alt](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#alt) - Tipo: imagem
+- [autocapitalize](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/autocapitalize)
+- [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
+- [autofocus](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autofocus) -  auto foca no formulario
+- [capture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#capture) - Tipo: file
+- checked
+- [dirname](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/dirname)
+- disabled
+- [form](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form)
+- [formaction](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction) - Tipo: Submit
+- height | width - Tipo: Imagem
+- [id](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#id)
+- [inputmode](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#inputmode) - teclado virtual
+- [list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list) - sugestões
+- min | max - Tipo: data e hora
+- maxlength | minlength - Tipo: texto
+- [multiple](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#multiple) - tipo: email e file
+- name
+- pattern - padrão texto
+- placeholder
+- [readonly](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly)
+- [required](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required)
+- size - tamanho em px. da caixa do form.
+- src - Tipo: imagem
+- [step](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#step) - Tipo data e hora, range e numero
+- tabindex
+- title
+- type
+- value
+
+#### [Non - Stardard](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#non-standard_attributes)
+
+Não estão incluso em todos os navegadores.
+
+### [Metodos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#methods)
+
+Providenciador por [``HTMLInputElement``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) que representa os elementos de ``<input>`` em DOM. [``HTMLElement``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement), [``Element``](https://developer.mozilla.org/en-US/docs/Web/API/Element), [``Node``](https://developer.mozilla.org/en-US/docs/Web/API/Node), [``EventTarget``](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget).
+
+- [``checkValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidit) - RETURN: ``bool``; caso ``false``: [``invalidEvent``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event)
+- [``reportValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/reportValidity) - RETURN: ``bool``; caso ``false``: [``invalidEvent``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event); caso não cancelado: reporta ao usuário.
+- [``select()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select)
+- [``setCustomValidity('mensagem')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setCustomValidity) - PARAM: ``string``; define ``validityErrorMessage``.
+- [``setRangeText('replacement')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setRangeText) - substitui no range de ``<input>`` ou ``<textarea>``
+  - ``start``, ``end``: ``string``
+  - ``selectMode``:
+    - ``"select"``: seleciona texto inserido mais recente
+    - ``"start"``: move texto selecionado para antes do texto inserido
+    - ``"end"``: mode texto selecionado para depois do texto inserido
+    - ``"preserve"``: preserva o valor selecionado, definido por padrão
+- [``setSelectionRange(start, end)``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange) - seleciona o texto no range
+  - ``direction``: ``'forward'``; ``'backward'``; ``'none'``: definido por padrão.
+- [``showPicker()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/showPicker) - mostra ao user o elemento selecionado: ``date``, ``color`` ou ``file``.
+- [``stepDown()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepDown) | [``stepUp()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepUp) - muito complicado lê a documentação ai.
+
