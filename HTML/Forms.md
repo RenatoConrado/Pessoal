@@ -50,8 +50,8 @@
       - [``setSelectionRange(start, end)``](#setselectionrangestart-end)
       - [``showPicker()``](#showpicker)
       - [``stepDown()`` | ``stepUp()``](#stepdown--stepup)
-  - [``Label`` O Rótulo](#label-o-rótulo)
-  - [``Button`` O Botão](#button-o-botão)
+  - [``<Label>`` O Rótulo](#label-o-rótulo)
+  - [``<Button>`` O Botão](#button-o-botão)
     - [Atributos](#atributos-2)
       - [``name``](#name-1)
       - [``value``](#value)
@@ -610,7 +610,7 @@ Mostra ao usuario o elemento selecionado: ``date``, ``color`` ou ``file``.
 
 muito complicado lê a documentação ai.
 
-## [``Label``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) O Rótulo
+## [``<Label>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) O Rótulo
 
 ![A simple example of label](./assets/label_example_simple.png)
 
@@ -640,7 +640,7 @@ não coloque elementos como ``<button>`` ou ``<a>``.
 </p>
 ```
 
-## [``Button``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) O Botão
+## [``<Button>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) O Botão
 
 <button type="button">butão</button>
 
