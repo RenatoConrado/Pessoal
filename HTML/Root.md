@@ -15,7 +15,8 @@ Define o [``XML``](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduc
 
 Formato [RFC 5646: Tags para identificação de idiomas](https://datatracker.ietf.org/doc/html/rfc5646) (ou BCP 47).
 
-> [!NOTE] O Padrão caso não especificado é uma string vazia.
+> [!NOTE]
+> O Padrão, caso não especificado é uma string vazia.
 
 ### [Subtag Língua](https://datatracker.ietf.org/doc/html/rfc5646#section-2.2.1)
 
