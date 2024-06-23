@@ -64,6 +64,76 @@
       - [``formmethod``](#formmethod)
       - [``formtarget``](#formtarget)
     - [Notas](#notas)
+  - [``<textarea>`` O Bloco de Texto](#textarea-o-bloco-de-texto)
+    - [Atributos](#atributos-3)
+      - [``autocapitalize``](#autocapitalize-1)
+      - [``autocomplete``](#autocomplete-1)
+      - [``autofocus``](#autofocus-1)
+      - [``cols``](#cols)
+      - [``dirname``](#dirname)
+      - [``disabled``](#disabled-1)
+      - [``form``](#form-1)
+      - [``maxlength`` | ``minlength``](#maxlength--minlength)
+      - [``placeholder``](#placeholder)
+      - [``readonly``](#readonly)
+      - [``required``](#required)
+      - [``rows``](#rows)
+      - [``spellcheck``](#spellcheck)
+      - [``wrap``](#wrap)
+    - [Atributuos não-padrão](#atributuos-não-padrão)
+      - [``autocorrect``](#autocorrect)
+  - [``<legend>`` A Legenda](#legend-a-legenda)
+  - [``<fieldset> O Conjuto da obra``](#fieldset-o-conjuto-da-obra)
+    - [Atributos](#atributos-4)
+      - [``disabled``](#disabled-2)
+      - [``form``](#form-2)
+      - [``name``](#name-2)
+  - [``<datalist>`` A Lista de Dados](#datalist-a-lista-de-dados)
+    - [Tipos](#tipos-1)
+      - [``Data e Hora``](#data-e-hora)
+      - [``Range``](#range-1)
+      - [``Color``](#color-1)
+      - [Password](#password-1)
+  - [``<meter>`` O Medidor](#meter-o-medidor)
+    - [Atributos](#atributos-5)
+      - [``value``](#value-1)
+      - [``min``](#min)
+      - [``max``](#max)
+      - [``low``](#low)
+      - [``high``](#high)
+      - [``optimum``](#optimum)
+      - [``form``](#form-3)
+  - [``<progress>`` O Indicador de Progresso](#progress-o-indicador-de-progresso)
+    - [Atributos](#atributos-6)
+      - [max](#max-1)
+      - [value](#value-2)
+  - [``<option>`` As Opções](#option-as-opções)
+    - [Atributos](#atributos-7)
+      - [``disabled``](#disabled-3)
+      - [``label``](#label)
+      - [``selected``](#selected)
+      - [``value``](#value-3)
+  - [``<select>`` O Selecionar](#select-o-selecionar)
+    - [Atributos](#atributos-8)
+      - [``autocomplete``](#autocomplete-2)
+      - [``autofocus``](#autofocus-2)
+      - [``disabled``](#disabled-4)
+      - [``form``](#form-4)
+      - [``multiple``](#multiple)
+      - [``name``](#name-3)
+      - [``required``](#required-1)
+      - [``size``](#size)
+    - [Example](#example)
+  - [``<optgroup>`` O Grupo de Opções](#optgroup-o-grupo-de-opções)
+    - [Atributos](#atributos-9)
+      - [``disabled``](#disabled-5)
+      - [``label``](#label-1)
+  - [``<output>`` O Container de Saída](#output-o-container-de-saída)
+    - [Atributos](#atributos-10)
+      - [``for``](#for)
+      - [``form``](#form-5)
+      - [``name``](#name-4)
+    - [Exemplo](#exemplo-1)
 
 ## [``<Form>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) O Formulário
 
@@ -490,6 +560,7 @@ Não estão incluso em todos os navegadores.
 ### [Metodos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#methods)
 
 Providenciado por [``HTMLInputElement``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement), representa os elementos de ``<input>`` em ``DOM``.
+
 - [``HTMLElement``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
 - [``Element``](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - [``Node``](https://developer.mozilla.org/en-US/docs/Web/API/Node)
@@ -659,3 +730,384 @@ Elementos ``<button>`` são muito mais fáceis de estilizar do que elementos ``<
 Se seus botões não forem para enviar dados de formulário para um servidor, certifique-se de definir seu atributo ``type="button"``. Caso contrário, eles tentarão enviar dados do formulário e carregar a resposta (inexistente), possivelmente destruindo o estado atual do documento.
 
 Embora ``<button type="button">`` não tenha comportamento padrão, manipuladores de eventos podem ser programados para acionar comportamentos. Um botão ativado pode executar ações programáveis usando JavaScript, como remover um item de uma lista.
+
+## [``<textarea>`` O Bloco de Texto](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
+
+![A simple example of textarea](./assets/textarea_example_simple.png)
+
+```html
+<label for="story">Tell us your story:</label>
+
+<textarea id="story" name="story" rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+```
+
+### [Atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes)
+
+#### [``autocapitalize``](#autocapitalize)
+
+#### [``autocomplete``](#autocomplete)
+
+- ``on`` or ``off``
+
+#### [``autofocus``](#autofocus)
+
+#### [``cols``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#cols)
+
+Largura visivel. Padrão: 20
+
+#### ``dirname``
+
+#### ``disabled``
+
+#### [``form``](#form)
+
+- Associa com o ``id`` de um ``<form>``.
+
+#### ``maxlength`` | ``minlength``
+
+#### ``placeholder``
+
+#### ``readonly``
+
+#### ``required``
+
+#### [``rows``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#rows)
+
+- Numero de linhas visiveis. Padrão: 2
+
+#### [``spellcheck``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#spellcheck)
+
+- ``true``: Precisa ser escrevado corramente.
+- ``default``
+- ``false``
+
+#### [``wrap``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#wrap)
+
+- ``hard``: O browser automaticamente insere (``CR+LF``) ao chegar na largura de: [``<cols>``](#cols)
+- ``soft``: O browser assegura que todas as quebras de linha são ``CR+LF``, mas não adiciona a mais.
+- > [!WARNING] off: é como soft, mas é horizontamente scrolavel.
+
+### Atributuos não-padrão
+
+#### [``autocorrect``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#autocorrect)
+
+- ``on`` or ``off``
+
+## [``<legend>`` A Legenda](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)
+
+![A simple legend example](./assets/legend_example_simple.png)
+
+```html
+<legend>Choose your favorite monster</legend>
+
+<input type="radio" id="kraken" name="monster" value="K" />
+<label for="kraken">Kraken</label><br />
+
+<input type="radio" id="sasquatch" name="monster" value="S" />
+<label for="sasquatch">Sasquatch</label><br />
+
+<input type="radio" id="mothman" name="monster" value="M" />
+<label for="mothman">Mothman</label>
+```
+
+- Somente inclue os [Elementos Globais](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+- [Padrão HTML](https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element)
+
+## [``<fieldset> O Conjuto da obra``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)
+
+![A simple fieldset example](./assets/fieldset_example_simple.png)
+
+```html
+<form>
+    <fieldset>
+        <legend>Choose your favorite monster</legend>
+
+        <input type="radio" id="kraken" name="monster" value="K" />
+        <label for="kraken">Kraken</label><br />
+
+        <input type="radio" id="sasquatch" name="monster" value="S" />
+        <label for="sasquatch">Sasquatch</label><br />
+
+        <input type="radio" id="mothman" name="monster" value="M" />
+        <label for="mothman">Mothman</label>
+    </fieldset>
+</form>
+```
+
+### Atributos
+
+#### ``disabled``
+
+desativa tudo dentro de ``<fieldset>``.
+
+#### ``form``
+
+o uso disso é confuso.
+
+#### ``name``
+
+o nome do conjunto.
+
+## [``<datalist>`` A Lista de Dados](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist)
+
+> [!WARNING] O FIREFOX SÓ TEM SUPORTE PARCIALMENTE.
+
+![A simple datalist example](./assets/datalist_example_simple.png)
+
+```html
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate"></option>
+    <option value="Coconut"></option>
+    <option value="Mint"></option>
+    <option value="Strawberry"></option>
+    <option value="Vanilla"></option>
+</datalist>
+```
+
+### [Tipos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist#examples)
+
+#### [``Data e Hora``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist#date_and_time_types)
+
+- ``type=`` [``month``](#month), [``week``](#week), [``date``](#date), [``time``](#time), [``datetime-local``](#datetime-local).
+
+```html
+<input type="time" list="popularHours" />
+
+<datalist id="popularHours">
+    <option value="12:00"></option>
+    <option value="13:00"></option>
+    <option value="14:00"></option>
+</datalist>
+```
+
+#### ``Range``
+
+```html
+<label for="tick">Tip amount:</label>
+<input type="range" list="tickmarks" min="0" max="100" id="tick" name="tick" />
+
+<datalist id="tickmarks">
+    <option value="0"></option>
+    <option value="10"></option>
+    <option value="20"></option>
+    <option value="30"></option>
+</datalist>
+```
+
+#### ``Color``
+
+```html
+<label for="colors">Pick a color (preferably a red tone):</label>
+<input type="color" list="redColors" id="colors" />
+
+<datalist id="redColors">
+    <option value="#800000"></option>
+    <option value="#8B0000"></option>
+    <option value="#A52A2A"></option>
+    <option value="#DC143C"></option>
+</datalist>
+```
+
+#### Password
+
+> [!WARNING] Até é possivel mas nenhum Browser suporta isso por motivos obveis.
+
+## [``<meter>`` O Medidor](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter)
+
+![A simple meter example](./assets/meter_example_simple.png)
+
+```html
+<label for="fuel">Fuel level:</label>
+
+<meter id="fuel" 
+min="0" max="100" 
+low="33" high="66" 
+optimum="80" value="50">at 50/100</meter>
+```
+
+### Atributos
+
+#### ``value``
+
+#### ``min``
+
+#### ``max``
+
+#### ``low``
+
+#### ``high``
+
+#### ``optimum``
+
+#### ``form``
+
+## [``<progress>`` O Indicador de Progresso](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)
+
+![A simple example of progress indicator](./assets/progress_example_simple.png)
+
+```html
+<label for="file">File progress:</label>
+
+<progress id="file" max="100" value="70">70%</progress>
+```
+
+### Atributos
+
+#### max
+
+Padrão é 1, deve ser maior que 0 e **não tem ``min``**.
+
+#### value
+
+Entre 0 e 1, ou entre 0 e ``max``.
+
+## [``<option>`` As Opções](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
+
+### Atributos
+
+#### ``disabled``
+
+#### ``label``
+
+#### [``selected``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#selected)
+
+- Indica a opção inicialmente selecionada.
+
+#### ``value``
+
+## [``<select>`` O Selecionar](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+
+![A simple select example](./assets/select_example_simple.png)
+
+```html
+<label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select>
+```
+
+### Atributos
+
+#### ``autocomplete``
+
+#### ``autofocus``
+
+#### ``disabled``
+
+#### ``form``
+
+#### [``multiple``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#multiple)
+
+- Multiplas opções podem ser selecionadas,
+
+#### ``name``
+
+#### ``required``
+
+#### [``size``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#size)
+
+- Numero de linhas visiveis ao mesmo tempo.
+
+### Example
+
+![A complete example of select](./assets/select_example_complete.png)
+
+```html
+<label for="hr-select">Your favorite food</label> <br />
+
+<select name="foods" id="hr-select">
+    <option value="">Choose a food</option>
+    <hr />
+
+    <optgroup label="Fruit">
+        <option value="apple">Apples</option>
+        <option value="banana">Bananas</option>
+        <option value="cherry">Cherries</option>
+        <option value="damson">Damsons</option>
+    </optgroup>
+    <hr />
+
+    <optgroup label="Vegetables">
+        <option value="artichoke">Artichokes</option>
+        <option value="broccoli">Broccoli</option>
+        <option value="cabbage">Cabbages</option>
+    </optgroup>
+    <hr />
+
+    <optgroup label="Meat">
+        <option value="beef">Beef</option>
+        <option value="chicken">Chicken</option>
+        <option value="pork">Pork</option>
+    </optgroup>
+    <hr />
+
+    <optgroup label="Fish">
+        <option value="cod">Cod</option>
+        <option value="haddock">Haddock</option>
+        <option value="salmon">Salmon</option>
+        <option value="turbot">Turbot</option>
+    </optgroup>
+</select>
+```
+
+## [``<optgroup>`` O Grupo de Opções](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup)
+
+![A simple example of option group element](./assets/optgroup_example_simple.png)
+
+```html
+<label for="dino-select">Choose a dinosaur:</label>
+
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+
+    </optgroup>
+        <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select>
+```
+
+### Atributos
+
+#### ``disabled``
+
+#### ``label``
+
+## [``<output>`` O Container de Saída](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)
+
+### Atributos
+
+#### [``for``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#for)
+
+#### ``form``
+
+#### ``name``
+
+### Exemplo
+
+![Quem usa isso?](./assets/output_example.png)
+
+```html
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="b" name="b" value="50" /> +
+    <input type="number" id="a" name="a" value="10" /> =
+    <output name="result" for="a b">60</output>
+</form>
+```
