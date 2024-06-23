@@ -41,7 +41,8 @@
 
 Link: Representação alternativa do documento.
 
-> [!WARNING] Style sheet alternativo não é bem suportado.
+> [!WARNING]
+> Style sheet alternativo não é bem suportado.
 
 [Alternative Style Sheets](https://developer.mozilla.org/en-US/docs/Web/CSS/Alternative_style_sheets)
 
@@ -91,7 +92,8 @@ Link: indica que o conteudo é protegido por Copyright.
 
 ### [``manifest``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/manifest)
 
-> [!TIP] Experimental [Somente Android]
+> [!TIP]
+> Experimental [Somente Android]
 
 Link: Leva ao [App Web](https://developer.mozilla.org/en-US/docs/Web/Manifest) do android.
 
