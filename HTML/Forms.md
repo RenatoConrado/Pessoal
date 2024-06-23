@@ -2,137 +2,134 @@
 
 - [Formulário](#formulário)
   - [``<Form>`` O Formulário](#form-o-formulário)
-    - [Atributos](#atributos)
-      - [``accept-charset``](#accept-charset)
-      - [``autocapitalize``](#autocapitalize)
-      - [``autocomplete``](#autocomplete)
-      - [``name``](#name)
-      - [``rel``](#rel)
+    - [``accept-charset``](#accept-charset)
+    - [``autocapitalize``](#autocapitalize)
+    - [``autocomplete``](#autocomplete)
+    - [``name``](#name)
+    - [``rel``](#rel)
     - [Atributos de Envio](#atributos-de-envio)
-      - [``action``](#action)
-      - [``method``](#method)
-      - [``enctype``](#enctype)
-      - [``novalidate``](#novalidate)
-      - [``target``](#target)
+    - [``action``](#action)
+    - [``method``](#method)
+    - [``enctype``](#enctype)
+    - [``novalidate``](#novalidate)
+    - [``target``](#target)
     - [Exemplo](#exemplo)
   - [``<Input>`` A Entrada](#input-a-entrada)
-    - [Tipos](#tipos)
-      - [``button``](#button)
-      - [``checkbox``](#checkbox)
-      - [``color``](#color)
-      - [``date``](#date)
-      - [``datetime-local``](#datetime-local)
-      - [``email``](#email)
-      - [``file``](#file)
-      - [``hidden``](#hidden)
-      - [``image``](#image)
-      - [``month``](#month)
-      - [``number``](#number)
-      - [``password``](#password)
-      - [``radio``](#radio)
-      - [``range``](#range)
-      - [``reset``](#reset)
-      - [``search``](#search)
-      - [``submit``](#submit)
-      - [``tel``](#tel)
-      - [``text``](#text)
-      - [``time``](#time)
-      - [``url``](#url)
-      - [``week``](#week)
-    - [Atributos](#atributos-1)
+    - [``button``](#button)
+    - [``checkbox``](#checkbox)
+    - [``color``](#color)
+    - [``date``](#date)
+    - [``datetime-local``](#datetime-local)
+    - [``email``](#email)
+    - [``file``](#file)
+    - [``hidden``](#hidden)
+    - [``image``](#image)
+    - [``month``](#month)
+    - [``number``](#number)
+    - [``password``](#password)
+    - [``radio``](#radio)
+    - [``range``](#range)
+    - [``reset``](#reset)
+    - [``search``](#search)
+    - [``submit``](#submit)
+    - [``tel``](#tel)
+    - [``text``](#text)
+    - [``time``](#time)
+    - [``url``](#url)
+    - [``week``](#week)
+    - [Atributos](#atributos)
     - [Non - Stardard](#non---stardard)
     - [Metodos](#metodos)
-      - [``checkValidity()``](#checkvalidity)
-      - [``reportValidity()``](#reportvalidity)
-      - [``setCustomValidity('mensagem')``](#setcustomvaliditymensagem)
-      - [``select()``](#select)
-      - [``setRangeText('replacement')``](#setrangetextreplacement)
-      - [``setSelectionRange(start, end)``](#setselectionrangestart-end)
-      - [``showPicker()``](#showpicker)
-      - [``stepDown()`` | ``stepUp()``](#stepdown--stepup)
+    - [``checkValidity()``](#checkvalidity)
+    - [``reportValidity()``](#reportvalidity)
+    - [``setCustomValidity('mensagem')``](#setcustomvaliditymensagem)
+    - [``select()``](#select)
+    - [``setRangeText('replacement')``](#setrangetextreplacement)
+    - [``setSelectionRange(start, end)``](#setselectionrangestart-end)
+    - [``showPicker()``](#showpicker)
+    - [``stepDown()`` | ``stepUp()``](#stepdown--stepup)
   - [``<Label>`` O Rótulo](#label-o-rótulo)
   - [``<Button>`` O Botão](#button-o-botão)
-    - [Atributos](#atributos-2)
-      - [``name``](#name-1)
-      - [``value``](#value)
-      - [``autofocus``](#autofocus)
-      - [``disabled``](#disabled)
-      - [``form``](#form)
-      - [``type``](#type)
-      - [``formaction``](#formaction)
-      - [``formectype``](#formectype)
-      - [``formmethod``](#formmethod)
-      - [``formtarget``](#formtarget)
-    - [Notas](#notas)
+    - [Atributos](#atributos-1)
+    - [``name``](#name-1)
+    - [``value``](#value)
+    - [``autofocus``](#autofocus)
+    - [``disabled``](#disabled)
+    - [``form``](#form)
+    - [``type``](#type)
+    - [``formaction``](#formaction)
+    - [``formectype``](#formectype)
+    - [``formmethod``](#formmethod)
+    - [``formtarget``](#formtarget)
   - [``<textarea>`` O Bloco de Texto](#textarea-o-bloco-de-texto)
-    - [Atributos](#atributos-3)
-      - [``autocapitalize``](#autocapitalize-1)
-      - [``autocomplete``](#autocomplete-1)
-      - [``autofocus``](#autofocus-1)
-      - [``cols``](#cols)
-      - [``dirname``](#dirname)
-      - [``disabled``](#disabled-1)
-      - [``form``](#form-1)
-      - [``maxlength`` | ``minlength``](#maxlength--minlength)
-      - [``placeholder``](#placeholder)
-      - [``readonly``](#readonly)
-      - [``required``](#required)
-      - [``rows``](#rows)
-      - [``spellcheck``](#spellcheck)
-      - [``wrap``](#wrap)
+    - [Atributos](#atributos-2)
+    - [``autocapitalize``](#autocapitalize-1)
+    - [``autocomplete``](#autocomplete-1)
+    - [``autofocus``](#autofocus-1)
+    - [``cols``](#cols)
+    - [``dirname``](#dirname)
+    - [``disabled``](#disabled-1)
+    - [``form``](#form-1)
+    - [``maxlength`` | ``minlength``](#maxlength--minlength)
+    - [``placeholder``](#placeholder)
+    - [``readonly``](#readonly)
+    - [``required``](#required)
+    - [``rows``](#rows)
+    - [``spellcheck``](#spellcheck)
+    - [``wrap``](#wrap)
     - [Atributuos não-padrão](#atributuos-não-padrão)
-      - [``autocorrect``](#autocorrect)
+    - [``autocorrect``](#autocorrect)
   - [``<legend>`` A Legenda](#legend-a-legenda)
   - [``<fieldset> O Conjuto da obra``](#fieldset-o-conjuto-da-obra)
-    - [Atributos](#atributos-4)
-      - [``disabled``](#disabled-2)
-      - [``form``](#form-2)
-      - [``name``](#name-2)
+    - [Atributos](#atributos-3)
+    - [``disabled``](#disabled-2)
+    - [``form``](#form-2)
+    - [``name``](#name-2)
   - [``<datalist>`` A Lista de Dados](#datalist-a-lista-de-dados)
-    - [Tipos](#tipos-1)
-      - [``Data e Hora``](#data-e-hora)
-      - [``Range``](#range-1)
-      - [``Color``](#color-1)
-      - [Password](#password-1)
+    - [Tipos](#tipos)
+    - [``Data e Hora``](#data-e-hora)
+    - [``Range``](#range-1)
+    - [``Color``](#color-1)
+    - [Password](#password-1)
   - [``<meter>`` O Medidor](#meter-o-medidor)
-    - [Atributos](#atributos-5)
-      - [``value``](#value-1)
-      - [``min``](#min)
-      - [``max``](#max)
-      - [``low``](#low)
-      - [``high``](#high)
-      - [``optimum``](#optimum)
-      - [``form``](#form-3)
+    - [Atributos](#atributos-4)
+    - [``value``](#value-1)
+    - [``min``](#min)
+    - [``max``](#max)
+    - [``low``](#low)
+    - [``high``](#high)
+    - [``optimum``](#optimum)
+    - [``form``](#form-3)
   - [``<progress>`` O Indicador de Progresso](#progress-o-indicador-de-progresso)
-    - [Atributos](#atributos-6)
-      - [max](#max-1)
-      - [value](#value-2)
+    - [Atributos](#atributos-5)
+    - [max](#max-1)
+    - [value](#value-2)
   - [``<option>`` As Opções](#option-as-opções)
-    - [Atributos](#atributos-7)
-      - [``disabled``](#disabled-3)
-      - [``label``](#label)
-      - [``selected``](#selected)
-      - [``value``](#value-3)
+    - [Atributos](#atributos-6)
+    - [``disabled``](#disabled-3)
+    - [``label``](#label)
+    - [``selected``](#selected)
+    - [``value``](#value-3)
   - [``<select>`` O Selecionar](#select-o-selecionar)
-    - [Atributos](#atributos-8)
-      - [``autocomplete``](#autocomplete-2)
-      - [``autofocus``](#autofocus-2)
-      - [``disabled``](#disabled-4)
-      - [``form``](#form-4)
-      - [``multiple``](#multiple)
-      - [``name``](#name-3)
-      - [``required``](#required-1)
-      - [``size``](#size)
+    - [Atributos](#atributos-7)
+    - [``autocomplete``](#autocomplete-2)
+    - [``autofocus``](#autofocus-2)
+    - [``disabled``](#disabled-4)
+    - [``form``](#form-4)
+    - [``multiple``](#multiple)
+    - [``name``](#name-3)
+    - [``required``](#required-1)
+    - [``size``](#size)
     - [Example](#example)
   - [``<optgroup>`` O Grupo de Opções](#optgroup-o-grupo-de-opções)
-    - [Atributos](#atributos-9)
-      - [``disabled``](#disabled-5)
-      - [``label``](#label-1)
+    - [Atributos](#atributos-8)
+    - [``disabled``](#disabled-5)
+    - [``label``](#label-1)
   - [``<output>`` O Container de Saída](#output-o-container-de-saída)
-    - [Atributos](#atributos-10)
-      - [``for``](#for)
-      - [``form``](#form-5)
-      - [``name``](#name-4)
+    - [Atributos](#atributos-9)
+    - [``for``](#for)
+    - [``form``](#form-5)
+    - [``name``](#name-4)
     - [Exemplo](#exemplo-1)
 
 ## [``<Form>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) O Formulário
@@ -157,19 +154,17 @@
 </form>
 ```
 
-### [Atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#attributes)
+### ``accept-charset``
 
-#### ``accept-charset``
+[``Character encoding``](https://www.w3.org/International/articles/definitions-characters/) o valor padrão é o mesmo da página
 
-- [``Character encoding``](https://www.w3.org/International/articles/definitions-characters/) o valor padrão é o mesmo da página
+```html
+<form accept-charset="utf-8, utf-16, ...">
+```
 
-    ```html
-    <form accept-charset="utf-8, utf-16, ...">
-    ```
+### ``autocapitalize``
 
-#### ``autocapitalize``
-
-#### [``autocomplete``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
+### [``autocomplete``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
 
 - O browser autocompleta os valores.
 - [``Valores especificos``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete#values).
@@ -186,9 +181,9 @@
     </form>
     ```
 
-#### ``name``
+### ``name``
 
-#### [``rel``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel)
+### [``rel``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel)
 
 - mó preguiça. clica no titulo ai
   - ``noopener``: Indica que o navegador não deve permitir que a nova página acessada possa acessar o objeto window.opener.
@@ -199,13 +194,13 @@
 
 Controlam o comportamento do envio.
 
-#### ``action``
+### ``action``
 
 URL que o ``method`` vai enviar.
 
-#### ``method``
+### ``method``
 
-o [``Método HTTP``](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+[``Método HTTP``](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
 - [``POST``](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): envia os dados como um [``request body``](https://developer.mozilla.org/en-US/docs/Web/API/Request/body).
 
@@ -254,7 +249,7 @@ o [``Método HTTP``](https://developer.mozilla.org/en-US/docs/Web/HTTP)
     </form>
     ```
 
-#### [``enctype``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#enctype)
+### [``enctype``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#enctype)
 
 Define o [``MIME type``](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 
@@ -281,11 +276,11 @@ Define o [``MIME type``](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic
 
 - ``text/plain``: envia em ``txt`` separado por linhas. somente para debug.
 
-#### ``novalidate``
+### ``novalidate``
 
 Desativa a validação automatica do navegador como ``required``.
 
-#### [``target``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#target)
+### [``target``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#target)
 
 Define onde a ``resp`` do servidor deve ser exibida.
 
@@ -337,27 +332,25 @@ Define onde a ``resp`` do servidor deve ser exibida.
 <input type="text" id="name" name="name" required minlength="1" maxlength="9" size="11" placeholder="formulario"/>
 ```
 
-### [Tipos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#type)
-
-#### [``button``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+### [``button``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
 
 ```html
 <input type="button" value="butão"/>
 ```
 
-#### [``checkbox``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+### [``checkbox``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 
 ```html
 <input type="checkbox" checked/>
 ```
 
-#### [``color``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
+### [``color``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color)
 
 ```html
 <input type="color" value=#ab3456/>
 ```
 
-#### [``date``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+### [``date``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
   
 - [``value="Date String Format"``](https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats#date_strings)
 
@@ -365,13 +358,13 @@ Define onde a ``resp`` do servidor deve ser exibida.
     <input type="date" value="2001-09-11"/>
     ```
 
-#### [``datetime-local``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
+### [``datetime-local``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
 
 ```html
 <input type="datetime-local" value="2001-09-11T08:46"/>
 ```
 
-#### [``email``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
+### [``email``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
 
 - [Validar email](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#validation)
 
@@ -383,7 +376,7 @@ Define onde a ``resp`` do servidor deve ser exibida.
     placeholder="Insira o seu melhor email" />
     ```
 
-#### [``file``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+### [``file``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
 
 - [Receber Arquivos](https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications#getting_information_about_selected_files)
 
@@ -393,13 +386,13 @@ Define onde a ``resp`` do servidor deve ser exibida.
     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
     ```
 
-#### [``hidden``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden)
+### [``hidden``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden)
 
 ```html
 <input type="hidden"/>
 ```
 
-#### [``image``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
+### [``image``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
 
 - [``alt``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#alt)
 - [formaction](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction)
@@ -408,25 +401,25 @@ Define onde a ``resp`` do servidor deve ser exibida.
     <input type="image" src="../assets/ein.png" alt="cachorrinho fofo">
     ```
 
-#### [``month``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month)
+### [``month``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month)
 
 ```html
 <input type="month" value="2001-11" />
 ```
 
-#### [``number``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
+### [``number``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
 
 ```html
 <input type="number" min="1" max= "9" value="11"/>
 ```
 
-#### [``password``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
+### [``password``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
 
 ```html
 <input type="password" placeholder="senha" minlength="8" required/>
 ```
 
-#### [``radio``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+### [``radio``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
 ```html
 <form>
@@ -450,13 +443,13 @@ Define onde a ``resp`` do servidor deve ser exibida.
 </form>
 ```
 
-#### [``range``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+### [``range``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
   
 ```html
 <input type="range" name="volume" min="1" max="11" />
 ```
 
-#### [``reset``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
+### [``reset``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset)
 
 ```html
 <input type="text" size="25" placeholder="digite algo e aperte em Reset"/>
@@ -464,44 +457,44 @@ Define onde a ``resp`` do servidor deve ser exibida.
 <input type="submit" value="Submit"/>
 ```
 
-#### [``search``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search)
+### [``search``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search)
 
 ```html
 <input type="search" name="q" placeholder="procure algo">
 <button>Search</button>
 ```
 
-#### [``submit``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
+### [``submit``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit)
 
 ```html
 <input type="submit" value="Mandar" />
 ```
 
-#### [``tel``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
+### [``tel``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
 
 ```html
 <input type="tel" placeholder="01-2345-6789" size=10 pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required />
 ```
 
-#### [``text``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
+### [``text``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
 
 ```html
 <input type="text" placeholder="texto simples" size=9>
 ```
 
-#### [``time``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)
+### [``time``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)
 
 ```html
 <input type="time" min="07:00" max="18:00" value="13:40"/>
 ```
 
-#### [``url``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)
+### [``url``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url)
 
 ```html
 <input type="url" placeholder="https://clonarcartao.com" pattern="https://.*" size="30"/>
 ```
 
-#### [``week``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week)
+### [``week``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week)
 
 ```html
 <input type="week" min="2024-W18" max="2024-W26" required />
@@ -526,7 +519,7 @@ Define onde a ``resp`` do servidor deve ser exibida.
     </form>
     ```
 
-- [``autofocus``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#autofocus) -  auto foca no formulario
+- ``autofocus``-  auto foca no formulario
 - [``capture``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#capture) - Tipo: ``file``
 - ``checked``
 - [``dirname``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/dirname)
@@ -534,17 +527,17 @@ Define onde a ``resp`` do servidor deve ser exibida.
 - [``form``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#form)
 - [``formaction``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#formaction) - Tipo: ``Submit``
 - ``height`` | ``width`` - Tipo: ``Image``
-- [``id``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#id)
+- ``id``
 - [``inputmode``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#inputmode) - teclado virtual
 - [``list``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#list) - sugestões
 - ``min`` | ``max`` - Tipo: ``data e hora``
 - ``maxlength`` | ``minlength`` - Tipo: ``texto``
-- [``multiple``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#multiple) - tipo: ``email`` e ``file``
+- ``multiple`` - tipo: ``email`` e ``file``
 - ``name``
 - ``pattern`` - padrão texto.
 - ``placeholder``
-- [``readonly``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly)
-- [``required``](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required)
+- ``readonly``
+- ``required``
 - ``size`` - tamanho em ``px``. da caixa do ``<form>``.
 - ``src`` - Tipo: ``image``
 - [``step``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#step) - Tipo ``data e hora``, ``range`` e ``numero``
@@ -566,21 +559,21 @@ Providenciado por [``HTMLInputElement``](https://developer.mozilla.org/en-US/doc
 - [``Node``](https://developer.mozilla.org/en-US/docs/Web/API/Node)
 - [``EventTarget``](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget).
 
-#### [``checkValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidit)
+### [``checkValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checkValidit)
 
 RETURN: ``bool``; caso ``false``: [``invalidEvent``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event)
 
-#### [``reportValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/reportValidity)
+### [``reportValidity()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/reportValidity)
 
 RETURN: ``bool``; caso ``false``: [``invalidEvent``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event); caso não seja cancelado: reporta ao usuário.
 
-#### [``setCustomValidity('mensagem')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setCustomValidity)
+### [``setCustomValidity('mensagem')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setCustomValidity)
 
 PARAM: ``string``; define ``validityErrorMessage``.
 
-#### [``select()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select)
+### [``select()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select)
 
-#### [``setRangeText('replacement')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setRangeText)
+### [``setRangeText('replacement')``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setRangeText)
 
 substitui no range de ``<input>`` ou ``<textarea>``
 
@@ -593,7 +586,7 @@ substitui no range de ``<input>`` ou ``<textarea>``
   - ``"end"``: mode texto selecionado para depois do texto inserido
   - ``"preserve"``: preserva o valor selecionado, definido por padrão
 
-#### [``setSelectionRange(start, end)``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange)
+### [``setSelectionRange(start, end)``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/setSelectionRange)
 
 Seleciona o texto no ``range``.
 
@@ -602,11 +595,11 @@ Seleciona o texto no ``range``.
   - ``'backward'``
   - ``'none'``: definido por padrão.
 
-#### [``showPicker()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/showPicker)
+### [``showPicker()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/showPicker)
 
 Mostra ao usuario o elemento selecionado: ``date``, ``color`` ou ``file``.
 
-#### [``stepDown()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepDown) | [``stepUp()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepUp)
+### [``stepDown()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepDown) | [``stepUp()``](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/stepUp)
 
 muito complicado lê a documentação ai.
 
@@ -660,38 +653,38 @@ Elementos que podem ser associados:
 - [``<select>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 - [``<textarea>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
-### [Atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attributes)
+### Atributos
 
-#### ``name``
+### ``name``
 
-#### ``value``
+### ``value``
 
-#### ``autofocus``
+### ``autofocus``
 
-#### ``disabled``
+### ``disabled``
 
-#### [``form``](#form-o-formulário)
+### [``form``](#form-o-formulário)
 
 - Associa com o ``id`` de ``<form>`` do mesmo documento. Caso não exista associa com o ``<form>`` anterior
 
-#### [``type``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#type)
+### [``type``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#type)
 
 - ``submit``: Envia o conteudo de ``<form>``
 - ``reset``: Funciona como ``<input type="reset">``
 - ``button``: Não faz nada.
 
-#### [``formaction``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#formaction)
+### [``formaction``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#formaction)
 
 - ``type="submit"`` com o atributo ``formaction`` definido, mas sem um ``<form>`` associado, não faz nada. Você deve definir um proprietário de ``<form>``.
 
-#### [``formectype``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#formenctype)
+### [``formectype``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#formenctype)
 
 - Caso seja do ``type="submit"``, especifica a formatação:
 - ``application/x-www-form-urlencoded``: Definido por padrão.
 - ``multipart/form-data``: Usado para enviar ``<input>`` com seu ``type="file"``.
 - ``text/plain``: Especifico para debug, não deve ser usado.
 
-#### [``formmethod``](#method)
+### [``formmethod``](#method)
 
 - caso não seja ``type="button"``, especifica o [``métodoHTTP``](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 - [``post``](https://www.rfc-editor.org/rfc/rfc9110#POST): Envia os dados de ``<form>``, informações confidenciais como login.
@@ -705,7 +698,7 @@ Elementos que podem ser associados:
     </form>
     ```
 
-#### [``formtarget``](#target)
+### [``formtarget``](#target)
 
 - Caso seja ``type="submit"`` substitui o valor de ``target``
 - ``_self``: Envia o form e abre na mesma janela. Valor padrão
@@ -723,13 +716,10 @@ Elementos que podem ser associados:
     </form>
     ```
 
-### Notas
-
-Elementos ``<button>`` são muito mais fáceis de estilizar do que elementos ``<input>``. Você pode adicionar conteúdo HTML interno (como ``<i>``, ``<br>``, ou até ``<img>``), e usar pseudo-elementos ``::after`` e ``::before`` para renderizações complexas.
-
-Se seus botões não forem para enviar dados de formulário para um servidor, certifique-se de definir seu atributo ``type="button"``. Caso contrário, eles tentarão enviar dados do formulário e carregar a resposta (inexistente), possivelmente destruindo o estado atual do documento.
-
-Embora ``<button type="button">`` não tenha comportamento padrão, manipuladores de eventos podem ser programados para acionar comportamentos. Um botão ativado pode executar ações programáveis usando JavaScript, como remover um item de uma lista.
+> [!NOTE]
+> Elementos ``<button>`` são muito mais fáceis de estilizar do que elementos ``<input>``. Você pode adicionar conteúdo HTML interno (como ``<i>``, ``<br>``, ou até ``<img>``), e usar pseudo-elementos ``::after`` e ``::before`` para renderizações complexas.
+>Se seus botões não forem para enviar dados de formulário para um servidor, certifique-se de definir seu atributo ``type="button"``. Caso contrário, eles tentarão enviar dados do formulário e carregar a resposta (inexistente), possivelmente destruindo o estado atual do documento.
+> Embora ``<button type="button">`` não tenha comportamento padrão, manipuladores de eventos podem ser programados para acionar comportamentos. Um botão ativado pode executar ações programáveis usando JavaScript, como remover um item de uma lista.
 
 ## [``<textarea>`` O Bloco de Texto](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
@@ -745,45 +735,45 @@ It was a dark and stormy night...
 
 ### [Atributos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#attributes)
 
-#### [``autocapitalize``](#autocapitalize)
+### [``autocapitalize``](#autocapitalize)
 
-#### [``autocomplete``](#autocomplete)
+### [``autocomplete``](#autocomplete)
 
 - ``on`` or ``off``
 
-#### [``autofocus``](#autofocus)
+### [``autofocus``](#autofocus)
 
-#### [``cols``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#cols)
+### [``cols``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#cols)
 
 Largura visivel. Padrão: 20
 
-#### ``dirname``
+### ``dirname``
 
-#### ``disabled``
+### ``disabled``
 
-#### [``form``](#form)
+### [``form``](#form)
 
 - Associa com o ``id`` de um ``<form>``.
 
-#### ``maxlength`` | ``minlength``
+### ``maxlength`` | ``minlength``
 
-#### ``placeholder``
+### ``placeholder``
 
-#### ``readonly``
+### ``readonly``
 
-#### ``required``
+### ``required``
 
-#### [``rows``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#rows)
+### [``rows``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#rows)
 
 - Numero de linhas visiveis. Padrão: 2
 
-#### [``spellcheck``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#spellcheck)
+### [``spellcheck``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#spellcheck)
 
 - ``true``: Precisa ser escrevado corramente.
 - ``default``
 - ``false``
 
-#### [``wrap``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#wrap)
+### [``wrap``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#wrap)
 
 - ``hard``: O browser automaticamente insere (``CR+LF``) ao chegar na largura de: [``<cols>``](#cols)
 - ``soft``: O browser assegura que todas as quebras de linha são ``CR+LF``, mas não adiciona a mais.
@@ -791,7 +781,7 @@ Largura visivel. Padrão: 20
 
 ### Atributuos não-padrão
 
-#### [``autocorrect``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#autocorrect)
+### [``autocorrect``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea#autocorrect)
 
 - ``on`` or ``off``
 
@@ -838,15 +828,15 @@ Largura visivel. Padrão: 20
 
 ### Atributos
 
-#### ``disabled``
+### ``disabled``
 
 desativa tudo dentro de ``<fieldset>``.
 
-#### ``form``
+### ``form``
 
 o uso disso é confuso.
 
-#### ``name``
+### ``name``
 
 o nome do conjunto.
 
@@ -871,7 +861,7 @@ o nome do conjunto.
 
 ### [Tipos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist#examples)
 
-#### [``Data e Hora``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist#date_and_time_types)
+### [``Data e Hora``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist#date_and_time_types)
 
 - ``type=`` [``month``](#month), [``week``](#week), [``date``](#date), [``time``](#time), [``datetime-local``](#datetime-local).
 
@@ -885,7 +875,7 @@ o nome do conjunto.
 </datalist>
 ```
 
-#### ``Range``
+### ``Range``
 
 ```html
 <label for="tick">Tip amount:</label>
@@ -899,7 +889,7 @@ o nome do conjunto.
 </datalist>
 ```
 
-#### ``Color``
+### ``Color``
 
 ```html
 <label for="colors">Pick a color (preferably a red tone):</label>
@@ -913,7 +903,7 @@ o nome do conjunto.
 </datalist>
 ```
 
-#### Password
+### Password
 
 > [!WARNING] Até é possivel mas nenhum Browser suporta isso por motivos obveis.
 
@@ -932,19 +922,19 @@ optimum="80" value="50">at 50/100</meter>
 
 ### Atributos
 
-#### ``value``
+### ``value``
 
-#### ``min``
+### ``min``
 
-#### ``max``
+### ``max``
 
-#### ``low``
+### ``low``
 
-#### ``high``
+### ``high``
 
-#### ``optimum``
+### ``optimum``
 
-#### ``form``
+### ``form``
 
 ## [``<progress>`` O Indicador de Progresso](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)
 
@@ -958,11 +948,11 @@ optimum="80" value="50">at 50/100</meter>
 
 ### Atributos
 
-#### max
+### max
 
 Padrão é 1, deve ser maior que 0 e **não tem ``min``**.
 
-#### value
+### value
 
 Entre 0 e 1, ou entre 0 e ``max``.
 
@@ -970,15 +960,15 @@ Entre 0 e 1, ou entre 0 e ``max``.
 
 ### Atributos
 
-#### ``disabled``
+### ``disabled``
 
-#### ``label``
+### ``label``
 
-#### [``selected``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#selected)
+### [``selected``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option#selected)
 
 - Indica a opção inicialmente selecionada.
 
-#### ``value``
+### ``value``
 
 ## [``<select>`` O Selecionar](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
@@ -1000,23 +990,23 @@ Entre 0 e 1, ou entre 0 e ``max``.
 
 ### Atributos
 
-#### ``autocomplete``
+### ``autocomplete``
 
-#### ``autofocus``
+### ``autofocus``
 
-#### ``disabled``
+### ``disabled``
 
-#### ``form``
+### ``form``
 
-#### [``multiple``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#multiple)
+### [``multiple``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#multiple)
 
 - Multiplas opções podem ser selecionadas,
 
-#### ``name``
+### ``name``
 
-#### ``required``
+### ``required``
 
-#### [``size``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#size)
+### [``size``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select#size)
 
 - Numero de linhas visiveis ao mesmo tempo.
 
@@ -1086,19 +1076,19 @@ Entre 0 e 1, ou entre 0 e ``max``.
 
 ### Atributos
 
-#### ``disabled``
+### ``disabled``
 
-#### ``label``
+### ``label``
 
 ## [``<output>`` O Container de Saída](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output)
 
 ### Atributos
 
-#### [``for``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#for)
+### [``for``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output#for)
 
-#### ``form``
+### ``form``
 
-#### ``name``
+### ``name``
 
 ### Exemplo
 
