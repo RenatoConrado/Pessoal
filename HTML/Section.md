@@ -11,6 +11,7 @@
   - [``<footer>`` Rodapé](#footer-rodapé)
   - [``<address>`` Endereço de Contato](#address-endereço-de-contato)
   - [``<article>`` Artigo](#article-artigo)
+  - [``<div>`` Divisão de Conteúdo](#div-divisão-de-conteúdo)
   - [``<section>`` Seção Generica](#section-seção-generica)
 
 ## [``<h1>-<h6>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) Título da seção
@@ -35,16 +36,8 @@ Cada um desses tipos de conteúdo é representado como um elemento ``<p>`` dentr
 
 Não Tem muito significado semântico, o Titulo em si é mais importante.
 
-<hgroup style="text-align: right; padding-right: 16px; border-right: 10px solid #00c8d7;">
-    <h1 style="margin-bottom: 0">Frankenstein</h1>
-    <p style="margin: 0; font-weight: bold;">Ou: O Prometeu Moderno</p>
-</hgroup>
-<p>
-    Victor Frankenstein, um cientista suíço, tem uma grande ambição: criar vida inteligente. Mas quando a sua criatura se mexe pela primeira vez, ele percebe que criou um monstro. Um monstro que, abandonado pelo seu mestre e evitado por todos que o vêem, segue o Dr. Frankenstein até aos confins da terra.
-</p>
-
 ```html
-<hgroup style="text-align: right; padding-right: 16px; border-right: 10px solid #00c8d7;">
+<hgroup style="text-align: right; padding-right: 16px; border-right: 10px solid #09f;">
     <h1 style="margin-bottom: 0">Frankenstein</h1>
     <p style="margin: 0; font-weight: bold;">Ou: O Prometeu Moderno</p>
 </hgroup>
@@ -245,6 +238,10 @@ A data e hora de publicação podem ser descritas usando ``datetime`` em ``<time
     </article>
 </article>
 ```
+
+## [``<div>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) Divisão de Conteúdo
+
+Contêiner genérico para o fluxo do conteúdo. Ele não tem efeito no conteúdo ou no layout até que seja estilizado de alguma forma usando ``CSS``.
 
 ## [``<section>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section) Seção Generica
 
