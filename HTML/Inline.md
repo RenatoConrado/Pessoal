@@ -10,6 +10,7 @@
     - [rel](#rel)
     - [target](#target)
     - [type](#type)
+  - [``<br/>`` Quebra de Linha](#br-quebra-de-linha)
 
 ## [``<a>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) Âncora
 
@@ -106,3 +107,35 @@ O relacionamento do URL vinculado como tipos de link separados por espaço.
 ### type
 
 Sugere o formato do URL vinculado com um MIME type. Nenhuma funcionalidade integrada.
+
+## [``<br/>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br) Quebra de Linha
+
+quebra de linha no texto (carriage-return). É útil para escrever um poema ou discurso, onde a divisão dos versos é significativa.
+
+```html
+<blockquote>
+    <p>
+        Vês?! Ninguém assistiu ao formidável<br />
+        Enterro de tua última quimera.<br />
+        Somente a Ingratidão – esta pantera –<br />
+        Foi tua companheira inseparável!<br />
+    </p>
+    <p>
+        Acostuma-te à lama que te espera!<br />
+        O Homem que, nesta terra miserável,<br />
+        Mora entre feras, sente inevitável<br />
+        Necessidade de também ser fera<br />
+    </p>
+    <p>
+        Toma um fósforo, acende teu cigarro!<br />
+        O beijo, amigo, é a véspera do escarro.<br />
+        A mão que afaga é a mesma que apedreja.<br />
+    </p>
+    <p>
+        Se alguém causa ainda pena a tua chaga<br />
+        Apedreja essa mão vil que te afaga.<br />
+        Escarra nessa boca que te beija!<br />
+    </p>
+    <footer>-Augusto dos Anjos</footer>
+</blockquote>
+```
