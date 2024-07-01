@@ -11,6 +11,12 @@
     - [target](#target)
     - [type](#type)
   - [``<br/>`` Quebra de Linha](#br-quebra-de-linha)
+  - [``<cite>`` Citação](#cite-citação)
+  - [``<bdo>`` Texto Bidirecional](#bdo-texto-bidirecional)
+  - [``<bdi>`` Texto bidirecional Isolado](#bdi-texto-bidirecional-isolado)
+  - [``<abbr>`` Abreviação](#abbr-abreviação)
+    - [``title``](#title)
+  - [``<b>`` Bring Attention](#b-bring-attention)
 
 ## [``<a>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) Âncora
 
@@ -139,3 +145,115 @@ quebra de linha no texto (carriage-return). É útil para escrever um poema ou d
     <footer>-Augusto dos Anjos</footer>
 </blockquote>
 ```
+
+## [``<cite>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite) Citação
+
+É usado para marcar o título de uma obra criativa citada. A referência pode ser abreviada de acordo com convenções apropriadas ao contexto relacionadas aos metadados de citação.
+
+Um trabalho criativo que pode ser citado poderia ser, por exemplo, um dos seguintes:
+
+- Um livro
+- Um artigo de pesquisa
+- Uma dissertação
+- Um poema
+- Uma partitura musical
+- Uma canção
+- Um roteiro de peça ou filme
+- Um filme
+- Um programa de televisão
+- Um jogo
+- Uma escultura
+- Uma pintura
+- Uma produção teatral
+- Um jogo
+- Uma ópera
+- Um musical
+- Uma exibição
+- Um relato de caso jurídico
+- Um programa de computador
+- Um website
+- Uma página web
+- Uma postagem de blog ou comentário
+- Uma postagem ou comentário no fórum
+- Um tweet
+- Uma postagem no Facebook
+- Uma declaração escrita ou oral
+- E assim por diante.
+
+---
+
+## [``<bdo>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo) Texto Bidirecional
+
+- ``dir``: A direção na qual o texto deve ser renderizado no conteúdo deste elemento.
+
+  - ``ltr``: esquerda para a direita.
+  - ``rtl``: direita para a esquerda.
+
+```html
+<p>Este texto irá da esquerda para a direita.</p>
+<p><bdo dir="rtl">Este texto irá da direita para a esquerda.</bdo></p>
+```
+
+## [``<bdi>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi) Texto bidirecional Isolado
+
+Diz ao algoritmo bidirecional do browser para tratar o texto isoladamente do texto ao seu redor.
+
+É particularmente útil quando um site insere algum texto dinamicamente e não conhece a direcionalidade do texto que está sendo inserido.
+
+![A simple example of bidirectiona isolate element](./assets/bdi_example_simple.png)
+
+```html
+<h1>Campeões mundiais de wrestling</h1>
+
+<ul>
+    <li><span class="name">سما</span>: 3º lugar</li>
+    <li><bdi class="name">الرجل القوي إيان</bdi>: 4º lugar</li>
+</ul>
+```
+
+O "º" fica fora de lugar por que é um simbolo sem direção especifica, por isso ele é influenciado pelo texto que é da direita pra esqueda.
+
+---
+
+## [``<abbr>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr) Abreviação
+
+Ao incluir uma abreviatura ou acrônimo, forneça uma expansão completa do termo em texto simples na primeira utilização, Isso informa ao usuário o que significa a abreviatura ou sigla.
+
+### ``title``
+
+Fornece uma expansão para a abreviatura quando uma expansão completa não estiver presente.
+
+Isso fornece uma dica aos agentes do usuário sobre como anunciar/exibir o conteúdo e, ao mesmo tempo, informar a todos os usuários o que a abreviatura significa.
+
+Se presente, o título deve conter esta descrição completa e nada mais.
+
+```html
+<p>Ashok's joke made me <abbr title="Laugh Out Loud">LOL</abbr> big time.</p>
+```
+
+## [``<b>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b) Bring Attention
+
+Tem a semantica de chamar atenção para o elemento.
+
+**Não use isso para deixa o texto em negrito**, use o ``CSS``: ``font-weight: bold``
+
+Use para casos como:
+
+- palavras-chave em um resumo,
+- nomes de produtos em uma resenha
+- ou outros trechos de texto cuja apresentação típica seria em negrito (mas sem incluir qualquer importância especial).
+
+Não confunda com:
+
+- ``<strong>``,
+- ``<em>``
+- ou ``<mark>``.
+- Use-o somente quando nenhum dos outros acima servir.
+
+Não marque títulos e cabeçalhos usando o elemento ``<b>``. Para isso, use as tags ``h1`` a ``h6``. Use ``CSS`` para exibir em negrito.
+
+- É uma boa prática usar ``class`` em ``<b>`` para transmitir informações semânticas adicionais conforme necessário
+  - por exemplo ``<b class="lead">`` para a primeira frase de um parágrafo.
+  - Isso facilita o gerenciamento de vários casos de uso de ``<b>`` se suas necessidades estilísticas mudarem, sem a necessidade de alterar todos os seus usos no HTML.
+
+- Historicamente, ``<b>`` foi criado para deixar o texto em negrito. As informações de estilo ficaram obsoletas desde o HTML4, portanto, o significado do elemento ``<b>`` foi alterado.
