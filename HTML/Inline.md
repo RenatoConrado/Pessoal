@@ -17,6 +17,9 @@
   - [``<abbr>`` Abreviação](#abbr-abreviação)
     - [``title``](#title)
   - [``<b>`` Bring Attention](#b-bring-attention)
+  - [``<time>`` O elemento (Data) Hora](#time-o-elemento-data-hora)
+  - [``<data>`` Dados](#data-dados)
+  - [``<dfn>`` Definição](#dfn-definição)
 
 ## [``<a>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) Âncora
 
@@ -257,3 +260,63 @@ Não marque títulos e cabeçalhos usando o elemento ``<b>``. Para isso, use as 
   - Isso facilita o gerenciamento de vários casos de uso de ``<b>`` se suas necessidades estilísticas mudarem, sem a necessidade de alterar todos os seus usos no HTML.
 
 - Historicamente, ``<b>`` foi criado para deixar o texto em negrito. As informações de estilo ficaram obsoletas desde o HTML4, portanto, o significado do elemento ``<b>`` foi alterado.
+
+## [``<time>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) O elemento (Data) Hora
+
+Representa um período específico de tempo
+
+``datetime=``
+
+Deve estar em um desses formatos:
+
+- Uma hora em um relógio de 24 horas.
+- Uma data precisa no [calendário gregoriano](https://en.wikipedia.org/wiki/Gregorian_calendar) (com informações opcionais de hora e fuso horário).
+- [Uma duração de tempo válida](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string).
+
+Pode incluir ``datetime`` para traduzir datas para formato "legível-por-máquina", permitindo melhores resultados de mecanismos de pesquisa ou recursos personalizados, como lembretes.
+
+```html
+<p>
+    The Cure celebrará seu 40º aniversário em <time datetime="2018-07-07">7 de julho</time>no Hyde Park de Londres.
+</p>
+
+<p>
+    O concerto começa às <time datetime="20:00">20:00</time> e poderá desfrutar da banda durante pelo menos <time datetime="PT2H30M">2h 30m</time>.
+</p>
+```
+
+## [``<data>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data) Dados
+
+**Não** é diretamente relacionado com [tempo](#time-o-elemento-data-hora)
+
+```html
+<p>New Products:</p>
+<ul>
+    <li><data value="398">Mini Ketchup</data></li>
+    <li><data value="399">Jumbo Ketchup</data></li>
+    <li><data value="400">Mega Jumbo Ketchup</data></li>
+</ul>
+```
+
+``Value``: linka o conteúdo a uma tradução "legível-por-máquina".
+
+## [``<dfn>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn) Definição
+
+indica o termo que vai ser definido.
+
+Deve ser usado em uma declaração de definição completa, onde a definição completa do termo pode ser uma das seguintes:
+
+- O parágrafo anterior (um bloco de texto, às vezes marcado por um elemento ``<p>``)
+- par de: [``<dt>``](./Text.md#dt-description-term)/[``<dd>``](./Text.md#dd-description-details)
+- A ``section`` anterior mais próxima
+
+Especificando o termo que está sendo definido:
+
+- Se tiver um atributo ``title``, o valor de ``title`` será o o termo sendo definido. O elemento ainda deve conter texto, mas esse texto pode ser uma abreviatura (talvez usando``<abbr>``) ou outra forma do termo.
+
+- contém um único elemento filho e não possui nenhum conteúdo de texto próprio, e o elemento filho é um elemento ``<abbr>`` com um atributo ``title`` em si, então o valor exato de ``title`` de ``<abbr>`` é o termo sendo definido.
+
+- Caso contrário, o conteúdo do texto é o termo que está sendo definido. Isso é mostrado no primeiro exemplo abaixo.
+
+> [!NOTE]
+> Se possuir um atributo ``title``, ele **deve** conter o termo que está sendo definido e nenhum outro texto.
