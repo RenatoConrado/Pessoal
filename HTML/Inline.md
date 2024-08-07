@@ -20,6 +20,26 @@
   - [``<time>`` O elemento (Data) Hora](#time-o-elemento-data-hora)
   - [``<data>`` Dados](#data-dados)
   - [``<dfn>`` Definição](#dfn-definição)
+  - [``<code>`` Código em linha](#code-código-em-linha)
+  - [``<em>`` Ênfase](#em-ênfase)
+    - [``<em>`` vs ``<i>``](#em-vs-i)
+  - [``<i>`` Texto Idiomático](#i-texto-idiomático)
+  - [``<strong>`` Forte Importância](#strong-forte-importância)
+  - [``<kbd>`` Keyborad Input](#kbd-keyborad-input)
+  - [``<mark>`` texto Marcado](#mark-texto-marcado)
+  - [``<q>`` Citação em Linha](#q-citação-em-linha)
+  - [``<ruby>`` Notação em Ruby](#ruby-notação-em-ruby)
+  - [``<rp>`` Ruby Fallback Parenthesis](#rp-ruby-fallback-parenthesis)
+  - [``<s>`` Tachado](#s-tachado)
+  - [``<samp>`` Exemplo de saída](#samp-exemplo-de-saída)
+  - [``<small>`` Comentário Lateral](#small-comentário-lateral)
+  - [``<span>`` Extensão do Conteúdo](#span-extensão-do-conteúdo)
+  - [``<sub>`` Sub-escrito](#sub-sub-escrito)
+  - [``<sup>`` Sobre-escrito](#sup-sobre-escrito)
+  - [``<time>`` Hora (data)](#time-hora-data)
+  - [``<u>`` Anotação não articulada (sublinhado)](#u-anotação-não-articulada-sublinhado)
+  - [``<var>`` Variável](#var-variável)
+  - [``<wbr>`` Oportunidade de Quebra de Linha](#wbr-oportunidade-de-quebra-de-linha)
 
 ## [``<a>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) Âncora
 
@@ -320,3 +340,221 @@ Especificando o termo que está sendo definido:
 
 > [!NOTE]
 > Se possuir um atributo ``title``, ele **deve** conter o termo que está sendo definido e nenhum outro texto.
+
+## [``<code>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) Código em linha
+
+É estilizado para indicar que o texto é um pedaço de código de computador.
+
+Veja também [``<pre>``](./Text.md#pre-pré-formatado)
+
+## [``<em>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) Ênfase
+
+é usado para palavras que têm ênfase acentuada em comparação ao texto ao redor, o que geralmente é limitado a uma palavra e afeta o significado da frase.
+
+Normalmente é exibido em itálico. Porém ele não deve ser usado para aplicar estilo itálico; use a propriedade ``CSS`` ``font-style`` para esse propósito.
+
+- Use o elemento ``<cite>`` para marcar o título de uma obra (livro, peça, música, etc.).
+- Use o elemento ``<i>`` para marcar texto que está em um tom ou humor alternativo, o que abrange muitas situações comuns para itálico, como nomes científicos ou palavras em outros idiomas.
+- Use o elemento ``<strong>`` para marcar texto que tem maior importância do que o texto ao redor.
+
+pode ser aninhado, com cada nível de aninhamento indicando um grau maior de ênfase.
+
+```html
+<p>Get out of bed <em>now</em>!</p>
+
+<p>We <em>had</em> to do something about it.</p>
+
+<p>This is <em>not</em> a drill!</p>
+```
+
+### ``<em>`` vs ``<i>``
+
+``<em>`` representa a ênfase do estresse de seu conteudo
+
+``<i>`` representa o texto que se destaca da prosa normal, como
+
+- uma palavra estrangeira,
+- pensamentos de personagens fictícios
+- ou quando o texto se refere à definição de uma palavra.
+
+## [``<i>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i) Texto Idiomático
+
+representa um intervalo que é separado do texto normal por algum motivo como
+
+- texto idiomático,
+- termos técnicos,
+- designações taxonômicas e etc...
+
+Historicamente, é representado usando itálico, que é a fonte original da nomenclatura ``<i>`` deste elemento.
+
+Texto que se destaca da prosa normal por razões de legibilidade. Isso seria um intervalo de texto com significado semântico diferente do texto ao redor. Entre os casos de uso para o elemento ``<i>`` estão extensões de texto representando uma qualidade ou modo de texto diferente, como:
+
+- Voz ou humor alternativos
+- Designações taxonômicas (como o gênero e a espécie "Homo sapiens")
+- Termos idiomáticos de outro idioma (como "et cetera"); eles devem incluir o atributo lang para identificar o idioma
+- Termos técnicos
+- Transliterações
+- Pensamentos
+
+- Use ``<em>`` para indicar ênfase.
+- Use ``<strong>`` para indicar importância, seriedade ou urgência.
+- Use ``<mark>`` para indicar relevância.
+- Use ``<cite>`` para marcar o nome de uma obra, como um livro, peça ou música.
+- Use ``<dfn>`` para marcar a instância definidora de um termo.
+
+## [``<strong>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) Forte Importância
+
+É renderizado em negrito, mas se você quer usar negrito use ``CSS``
+
+Usado normalmente em avisos
+
+```html
+<p>
+... a regra mais importante, a regra que você nunca pode esquecer, não importa o quanto ele chore, não importa o quanto ele implore:
+<strong>nunca o alimente depois da meia-noite</strong>.
+</p>
+```
+
+> [!NOTE]
+> ``<strong>`` é para conteúdo de maior importância, enquanto o elemento.
+>
+> ``<b>`` é usado para chamar atenção para o texto sem indicar que ele é mais importante.
+
+## [``<kbd>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd) Keyborad Input
+
+![keyboard input example](./assets/keyboard_input.png)
+
+```html
+<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+```
+
+## [``<mark>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark) texto Marcado
+
+```html
+<p>Search results for "salamander":</p>
+
+<hr />
+
+<p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+<p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+```
+
+## [``<q>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q) Citação em Linha
+
+A maioria dos navegadores modernos implementa isso colocando o texto entre aspas. Este elemento é destinado a citações curtas que não exigem quebras de parágrafo; para citações longas, use o elemento ``<blockquote>``.
+
+## [``<ruby>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby) Notação em Ruby
+
+representa pequenas anotações que são renderizadas acima, abaixo ou ao lado do texto base, geralmente usadas para mostrar a pronúncia de caracteres do leste asiático.
+
+Ele também pode ser usado para anotar outros tipos de texto, mas esse uso é menos comum.
+
+O termo ruby ​​se originou como uma unidade de medida usada por tipógrafos, representando o menor tamanho que o texto pode ser impresso em papel de jornal, permanecendo legível.
+
+## [``<rp>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp) Ruby Fallback Parenthesis
+
+Fornecer parênteses de substituição para navegadores que não suportam a exibição de anotações ruby ​​usando o elemento ``<ruby>``.
+
+```html
+<ruby> 漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp> </ruby>
+```
+
+## [``<s>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s) Tachado
+
+Representar coisas que não são mais relevantes ou não mais precisas.
+
+No entanto, ``<s>`` não é apropriado ao indicar edições de documentos; para isso, use os elementos ``<del>`` e ``<ins>``, conforme apropriado.
+
+## [``<samp>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp) Exemplo de saída
+
+É usado para incluir texto em linha que representa uma exemplo de saída (ou citação) de um programa de computador. Seu conteúdo é normalmente renderizado usando a fonte monoespaçada padrão do navegador (como Courier ou Lucida Console).
+
+```html
+<p>I was trying to boot my computer, but I got this hilarious message:</p>
+
+<p>
+  <samp>Keyboard not found <br />Press F1 to continue</samp>
+</p>
+```
+
+## [``<small>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small) Comentário Lateral
+
+Representa comentários laterais e letras pequenas como direitos autorais e texto legal, independentemente de sua apresentação estilizada.
+
+Por padrão, ele renderiza o texto dentro dele um tamanho de fonte menor, como de ``small`` a ``x-small``.
+
+```html
+<p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
+<hr />
+
+<p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+```
+
+## [``<span>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) Extensão do Conteúdo
+
+É um contêiner inline genérico para frasear conteúdo, que não representa nada inerentemente.
+
+Ele pode ser usado para agrupar elementos para fins de estilo (usando os atributos ``class`` ou ``id``), ou porque eles compartilham valores de atributos, como ``lang``.
+
+Ele deve ser usado somente quando nenhum outro elemento semântico for apropriado.
+
+``<span>`` é muito parecido com um elemento ``<div>``, mas ``<div>`` é um elemento de nível de bloco, enquanto um ``<span>`` é um elemento de nível inline.
+
+## [``<sub>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub) Sub-escrito
+
+Especifica texto inline que deve ser exibido como subscrito por razões exclusivamente tipográficas.
+
+Subscritos são tipicamente renderizados com uma linha de base mais baixa usando texto menor.
+
+```html
+<p>
+A molécula favorita de quase todos os desenvolvedores é C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, também conhecida como "cafeína".
+</p>
+```
+
+## [``<sup>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup) Sobre-escrito
+
+Especifica texto inline que deve ser exibido como sobrescrito por razões exclusivamente tipográficas.
+
+Sobrescritos são geralmente renderizados com uma linha de base elevada usando texto menor.
+
+```html
+<p>The <em>Pythagorean theorem</em> is often expressed as the following equation:</p>
+
+<p>
+  <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var>
+</p>
+```
+
+## [``<time>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time) Hora (data)
+
+Representa um período específico no tempo.
+
+Ele pode incluir o atributo ``datetime`` para traduzir datas em um formato legível por máquina, permitindo melhores resultados de mecanismos de busca ou recursos personalizados, como lembretes.
+
+- Um horário em um relógio de 24 horas.
+- Uma data precisa no [calendário gregoriano](https://en.wikipedia.org/wiki/Gregorian_calendar) (com informações opcionais de horário e fuso horário).
+- [Uma duração de tempo válida](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string).
+
+## [``<u>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u) Anotação não articulada (sublinhado)
+
+```html
+<p>Você pode usar este elemento para destacar erros de <u>otografia</u>, para que o escritor possa <u>corigir</u>.</p>
+```
+
+## [``<var>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var) Variável
+
+Representa o nome de uma variável em uma expressão matemática ou um contexto de programação.
+
+Ele é normalmente renderizado usando uma versão em itálico da fonte atual.
+
+```html
+<p>
+  O volume de uma caixa é <var>l</var> × <var>w</var> × <var>h</var>, onde <var>l</var> representa o comprimento, <var>w</var> a largura e <var>h</var> a altura da caixa.
+</p>
+```
+
+## [``<wbr>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr) Oportunidade de Quebra de Linha
+
+Representa uma oportunidade de quebra de Linha – uma posição dentro do texto onde o navegador pode opcionalmente quebrar uma linha, embora suas regras de quebra de linha não criem uma quebra naquele local.
